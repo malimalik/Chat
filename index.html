@@ -9,18 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>>
 
-    </script>
 
     <script>
 
-        $(document).read(function () {
+        $(document).ready(function () {
             $("#but").click(function () {
-                $("#test").load("data.txt",
+                $("#message").load("message.txt",
                     {
                         First_Name: "Ali",
                         Last_Name: "Malik"
                     }, function () {
-                        alert("You have a message!")
+                        alert("You have a message!");
                     });
             });
         });
@@ -32,8 +31,10 @@
 <body>
     <div id="message">
         <p> Hi there, this is the first message!</p>
+
+
     </div>
-    <button id="but"> Load a new message here </button>>
+    <button id="but"> Load a new message here </button>
 </body>
 
 </html>
