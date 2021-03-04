@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>
-    AJAX Entries
-</title>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>>
+<head>
+    <title>
+        AJAX Entries
+    </title>
 
-</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>>
 
-<script>
-    $(document).read(function(){
-        $("#but").load("message.txt");
-    });
-</script>
+    </script>
+
+    <script>
+        $(document).read(function () {
+            $("#but").load("message.txt", {
+                First_Name: "Ali",
+                Last_Name: "Malik"
+
+            });
+        });
+    </script>
 
 </head>
+
+<body>
+    <div id="message">
+        <p> Hi there, this is the first message!</p>
+    </div>
+    <button id="but"> Load a new message here </button>>
+</body>
 
 </html>
