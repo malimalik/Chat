@@ -12,13 +12,19 @@
     </script>
 
     <script>
-        $(document).read(function () {
-            $("#but").load("message.txt", {
-                First_Name: "Ali",
-                Last_Name: "Malik"
 
+        $(document).read(function () {
+            $("#but").click(function () {
+                $("#test").load("data.txt",
+                    {
+                        First_Name: "Ali",
+                        Last_Name: "Malik"
+                    }, function () {
+                        alert("You have a message!")
+                    });
             });
         });
+
     </script>
 
 </head>
